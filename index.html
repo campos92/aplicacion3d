@@ -1,0 +1,554 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Tercera Aplicacion</title>
+
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/temasapp2.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js" type="text/javascript"></script>
+<script type="text/javascript">
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('imagenes/comunidad5.jpg','imagenes/comunidad1.jpg','imagenes/comunidad2.jpg','imagenes/comunidad3.jpg')">
+<div data-role="page" id="Principal" data-theme="a">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar"  data-back-btn-theme="a">
+  <h1>La Contaminación</h1>
+ </div>
+ 
+ <div>
+     <img src="imagenes/primera_imagen.jpg" width="100%" height="36%">
+ </div>
+ 
+ <div data-role="main" class="ui-content">
+  <div data-role="collapsible" data-content-theme="false">
+    <h1>Visor de Imagenes</h1>
+ <div>
+   <!-- Start WOWSlider.com -->
+<iframe src="visor/indexwow.html" style="width:500px;height:303px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" marginheight="0" marginwidth="0"></iframe>
+<!-- End WOWSlider.com -->
+ </div>
+ </div>
+ </div>
+ 
+ <div>
+      <ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-a">
+      <li class="ui-first-child ui-lastt-child">
+      <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+      <h2>Que es la Contaminación</h2>
+      <p>Informacion..</p>
+       </a>
+      </li>
+      <li class="ui-first-child ui-last-child">
+        <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2>Causas</h2>
+        </a>
+      </li>
+            <li class="ui-first-child ui-last-child">
+        <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2>Consecuencias</h2>
+        </a>
+      </li>
+            <li class="ui-first-child ui-last-child">
+        <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2>Medidas Preventivas</h2>
+        </a>
+      </li>
+            <li class="ui-first-child ui-last-child">
+        <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2>Como evitar la contaminación en tu comunidad</h2>
+        </a>
+      </li>
+      <li class="ui-first-child ui-last-child">
+        <a href="#Pagina6" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2>¿Cuáles son las ciudades mas contaminadas?</h2>
+        </a>
+      </li>
+   </ul>
+</div>
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+   <div>
+     <h4>App3</h4>
+   </div>
+     <div>
+        <img src="imagenes/leaves-icon.png" width="46" height="46">
+     </div>
+   <div>
+     <h4>Vanessa Fuentes Campos</h4>
+   </div>
+  </div>
+</div>
+
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+     <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+     <h1>CONCEPTO DE CONTAMINACIÓN</h1>
+     </div>
+    <div data-role="content" align="center">
+     <div>
+        <h2>La contaminación es la introducción de sustancias en un medio que provocan que este sea inseguro o no apto para su uso.
+Es siempre una alteración negativa del estado natural del medio, y por lo general, se genera como consecuencia de la actividad humana considerándose una forma de impacto ambiental.</h2>
+      </div>
+     </div>
+     
+       <div data-role="main" class="ui-content">
+  <div data-role="collapsible" data-content-theme="false">
+    <h1>Tipos de Contaminación</h1>
+      <div data-role="main" class="ui-content">
+  <div data-role="collapsible" data-content-theme="false">
+    <h1>Contaminación del Agua:</h1>
+    <div>
+    <h2>¿Que es?</h2>
+    <p>“Contaminación del agua” es el tipo de contaminación que supone la contaminación distintos cuerpos de agua. Varias criaturas acuáticas dependen de estos cuerpos de agua y sus características naturales nutritivos para apoyar su vida.
+     <h3><p>¿Qué causa la contaminación del agua?</p></h3>
+     <p>1.-Los residuos industriales se vierten en estos cuerpos de agua.</p>
+     <p>2.-Esto provoca un desequilibrio químico en el agua que conduce a la muerte de los seres acuáticos.</p>
+     <p>3.-Insecticidas, pesticidas y productos químicos de maduración que se utilizan en las plantas que se usan en el sistema de aguas subterráneas o arroyos cercanos.</p>
+     <p>4.-Lavar la ropa cerca de lagos y ríos detergentes causa una enfermedad llamada “eutrofización”, que bloquea la luz del sol entre en el interior y reduce los valores de oxígeno en el agua, causando un ambiente inhabitable.</p>
+    <br>
+    </div>
+ <div>
+    <img src="imagenes/contaminacion_agua.jpg" width="84%" height="36%"></div>
+ </div>
+ </div>
+ 
+ <div data-role="main" class="ui-content">
+  <div data-role="collapsible" data-content-theme="false">
+    <h1>Contaminación del Aire:</h1>
+    <div>
+    <h2>¿Que es?</h2>
+    <p>La contaminación del aire se define por la existencia y la integración de los compuestos tóxicos en el ambiente en concentraciones lo suficientemente altas como para causar daño a los seres humanos, los animales y el medio ambiente de la Tierra.
+     <h3><p>¿Qué causa la contaminación del aire?</p></h3>
+     <p>1.-La quema de combustibles fósiles emite monóxido de carbono y óxido de azufre.</p>
+     <p>2.-Automóviles, autobuses, aviones y cualquier forma de gas como combustible de transporte emiten gases de monóxido de carbono a través de sistemas de       escape.</p>
+     <p>3.-El dióxido de azufre se crea a través de la combustión de carbón, y está asociado con los residuos industriales.</p>
+     <p>4.-Los procesos de fabricación utilizan carbón como combustible, liberando dióxido de azufre en el aire a través de los sistemas de escape de fábrica.</p>
+    <br>
+    </div>
+ <div>
+    <img src="imagenes/contaminacion_aire.jpg" width="84%" height="36%"></div>
+ </div>
+ </div>
+ 
+  <div data-role="main" class="ui-content">
+  <div data-role="collapsible" data-content-theme="false">
+    <h1>Contaminación del Suelo:</h1>
+    <div>
+    <h2>¿Que es?</h2>
+    <p>La contaminación del suelo se refiere a la contaminación del suelo por medio de exceso de fertilizantes, productos químicos, insecticidas, herbicidas, pesticidas, etc provocan contaminación del suelo en la disminución de la calidad del suelo y es causada por la erosión del suelo, el exceso o déficit de humedad, disminución de la nutrientes para las plantas o microorganismos del suelo, y la fluctuación de la temperatura alta.
+     <h3><p>¿Qué causa la contaminación del Suelo?</p></h3>
+     <p>1.-La deforestación.</p>
+     <p>2.-Los incendios forestales.</p>
+     <p>3.-La erosión del suelo.</p>
+     <p>4.-El uso excesivo de fertilizantes químicos.</p>
+     <p>5.-El vertido de residuos industriales y urbanos.</p>
+    <br>
+    </div>
+ <div>
+    <img src="imagenes/contaminacion_suelo.jpg" width="84%" height="36%"></div>
+ </div>
+ </div>
+ 
+ <div data-role="main" class="ui-content">
+  <div data-role="collapsible" data-content-theme="false">
+    <h1>Contaminación Termica:</h1>
+    <div>
+    <h2>¿Que es?</h2>
+    <p> La contaminación térmica se refiere a la adición de grandes cantidades de calor residual para el medio ambiente, las causas de la contaminación térmica son casi las mismas que las que causa la contaminación del aire.
+     <h3><p>¿Qué causa la contaminación Termica?</p></h3>
+     <p>1.-De vehículos de motor a la mayoría de la electricidad producida en las centrales eléctricas, la forma primaria de energía involucrada es el calor.</p>
+     <p>2.-La combustión de los combustibles.</p>
+     <p>3.-La combustión de aceite de convertir en energía mecánica o movimiento.</p>
+     <p>4.-La ineficiencia inherente a los procesos de conversión de energía resulta en pérdidas de calor hacia el medio ambiente.</p>
+     <p>5.-La adición de calor al medio ambiente constituye una amenaza grave para las personas, los animales y las plantas.</p>
+    <br>
+    </div>
+ <div>
+    <img src="imagenes/contaminacion_termica.jpg" width="84%" height="36%"></div>
+ </div>
+ </div>
+ 
+ <div data-role="main" class="ui-content">
+  <div data-role="collapsible" data-content-theme="false">
+    <h1>Contaminación Radiactiva:</h1>
+    <div>
+    <h2>¿Que es?</h2>
+    <p> Los desechos radiactivos son residuos que contienen material radiactivo. Los desechos radiactivos son generalmente subproductos de la generación de energía nuclear y otras aplicaciones de la      fisión nuclear o tecnología nuclear, como la investigación y la medicina.
+     <h3><p>¿Qué causa la contaminación Radiactiva?</p></h3>
+     <p>1.-La eliminación de los residuos nucleares.</p>
+     <p>2.-La producción de combustible nuclear.</p>
+     <p>3.-Reactores nucleares de potencia.</p>
+     <p>4.-El uso de radionucleidos en las industrias para diversas aplicaciones.</p>
+     <p>5.-Los ensayos nucleares llevados a cabo por personal de la defensa.</p>
+    <br>
+    </div>
+ <div>
+    <img src="imagenes/contaminacion_radiactiva.jpg" width="84%" height="36%"></div>
+ </div>
+ </div>
+ 
+ <div data-role="main" class="ui-content">
+  <div data-role="collapsible" data-content-theme="false">
+    <h1>Contaminación Acustica:</h1>
+    <div>
+    <h2>¿Que es?</h2>
+    <p>La contaminación acústica es el tipo de contaminación que se produce por diferentes fuentes de audio que está causando la sensación de irritación, distracción para nuestro medio ambiente. Esta       contaminación no es no sólo perturbar el medio ambiente sino que también produce daño a nuestra humanidad.
+     <h3><p>¿Qué causa la contaminación Acustica?</p></h3>
+     <p>1.-Ruido provocado por los vehículos de motor.</p>
+     <p>2.-Las sirenas de los servicios de emergencia.</p>
+     <p>3.-Maquinaria de fábrica.</p>
+     <p>4.-Trabajos de construcción.</p>
+     <p>5.-Diferentes sistemas de audio.</p>
+    <br>
+    </div>
+ <div>
+    <img src="imagenes/contaminacion_acustica.jpg" width="84%" height="36%"></div>
+ </div>
+ </div>
+ 
+ <div data-role="main" class="ui-content">
+  <div data-role="collapsible" data-content-theme="false">
+    <h1>Contaminación Luminica:</h1>
+    <div>
+    <h2>¿Que es?</h2>
+    <p>La contaminación lumínica es toda luz emitida o que se escapa por encima de la línea horizontal de las luminarias de exterior hacia el cielo. En otras palabras, es luz que no cumple ningún       propósito.
+     <h3><p>¿Qué causa la contaminación Acustica?</p></h3>
+     <p>1.-El uso de luminarias (farolas, proyectores o focos, etc).</p>
+     <p>2.-Una excesiva iluminación, produce asimismo innecesarias pérdidas de luz por reflexión en el suelo y demás objetos sobreiluminados..</p>
+     <p>3.-La falta de sensibilidad de las personas y sobre todo de las entidades responsables es debida principalmente a una falta de información unida al hecho frecuente de que al vivir durante mucho tiempo con este problema, nos hemos acostumbrado a él y ya no lo percibimos como tal.</p>
+    <br>
+    </div>
+ <div>
+    <img src="imagenes/contaminacion_luminica.jpg" width="84%" height="36%"></div>
+ </div>
+ </div>
+ 
+  </div>
+ </div>
+     
+   <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+   <div>
+     <h4>App3</h4>
+   </div>
+     <div>
+        <img src="imagenes/leaves-icon.png" width="46" height="46">
+     </div>
+   <div>
+     <h4>Vanessa Fuentes Campos</h4>
+   </div>
+  </div>
+  </div>
+
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+     <h1>CAUSAS</h1>
+   </div>
+   <div data-role="content" align="center">
+     <div>
+       <h2>Los principales causantes de la contaminación ambiental son:</h2></div>
+       <br>
+       <p>•Desechos sólidos domésticos</p>
+       <p>•Desechos sólidos industriales</p>
+       <p>•Exceso de fertilizante y productos químicos</p>
+       <p>•Tala</p>
+       <p>•Quema</p>
+       <p>•Basura</p>
+       <p>•El monóxido de carbono de los vehículos</p>
+       <p>•Desagües de aguas negras o contaminadas al mar o ríos</p>
+       <br>
+       <div>
+       <img src="imagenes/causas.jpg" width="443" height="160">
+       </div>
+     </div>
+     
+    <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+   <div>
+     <h4>App3</h4>
+   </div>
+     <div>
+        <img src="imagenes/leaves-icon.png" width="46" height="46">
+     </div>
+   <div>
+     <h4>Vanessa Fuentes Campos</h4>
+   </div>
+  </div>
+</div>
+
+<div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+       <h1>CONSECUENCIAS</h1>
+     </div>
+     <div data-role="content" align="center">
+          <h3>Problemas para la salud: </h3>
+          <p>•La contaminación hace que las personas estemos cada vez más expuestas a padecer problemas cardiovasculares</p>
+          <h3>Debilitamiento de la capa de ozono:</h3>
+          <p>•La consecuencia de este debilitamiento es que cada vez nos protege menos y, por ende, cada vez tenemos una mayor temperatura en el             planeta.</p>
+          <h3>La contaminación afecta al suelo y al agua:</h3>
+          <p>•Lo que hace que cada vez haya más especies en peligro de extinción. El agua no es potable en una gran cantidad de sitios </p>
+          <h3>La contaminación afecta al clima:</h3>
+          <p>•Pueden ser mucho más fríos o que los veranos son mucho más calurosos,el invierno y el verano pueden ser más largas y que las de             temperaturas medias, son cada vez más cortas.</p>
+       </div>
+       <div>
+          <img src="imagenes/consecuencias1.jpg" width="453" height="148">
+          <img src="imagenes/consecuencias2.jpg" width="438" height="142">
+          <img src="imagenes/consecuencias3.jpg" width="428" height="146">
+       </div>
+       </div>
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+   <div>
+     <h4>App3</h4>
+   </div>
+     <div>
+        <img src="imagenes/leaves-icon.png" width="46" height="46">
+     </div>
+   <div>
+     <h4>Vanessa Fuentes Campos</h4>
+   </div>
+  </div>
+</div>
+
+<div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+      <h1>MEDIDAS PREVENTIVAS</h1>
+   </div>
+   <div data-role="content" align="center">
+     <div>
+       <h2>¿Como prevenir la Contaminación?</h2>
+        <p>•No quemar ni talar arboles</p>
+        <p>•Controlar el uso de fertilizantes y pesticidas</p>
+        <p>•No botar basura en lugares inapropiados</p>
+        <p>•Regular el servicio de aseo urbano</p>
+        <p>•Crear conciencia ciudadana</p>
+        <p>•Controlar los derrames accidentales de petróleo</p>
+        <br>
+        </div>
+        <div data-role="main" class="ui-content">
+  <div data-role="collapsible" data-content-theme="false">
+    <h1>Mostrar Imagen</h1>
+    <div>
+    <p>Prevención!!
+    <br>
+    </div>
+ <div>
+    <img src="imagenes/prevencion.png" width="65%" height="55%"></div>
+ </div>
+ </div>
+     </div>
+ <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+   <div>
+     <h4>App3</h4>
+   </div>
+     <div>
+        <img src="imagenes/leaves-icon.png" width="46" height="46">
+     </div>
+   <div>
+     <h4>Vanessa Fuentes Campos</h4>
+   </div>
+  </div>
+  </div>
+
+<div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+     <h1>COMO EVITAR LA CONTAMINACION EN TU COMUNIDAD</h1>
+   </div>
+   
+  <div data-role="content" align="center">
+     <div>
+        <br>
+        <h2>PROPUESTA DE SOLUCIÓN:</h2>
+        </br>
+        <h3>-No tirar basura en la calle</h3>
+     </div>
+  </div>
+     <div data-role="main" class="ui-content">
+  <div data-role="collapsible" data-content-theme="false">
+    <h1>Mostrar Imagen</h1>
+    <div>
+    <p>
+    <br>
+    </div>
+ <div>
+    <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image33','','imagenes/comunidad1.jpg',1)"><img src="imagenes/cuidar_medioambiente.jpg" width="475" height="191" id="Image33"></a></div>
+ </div>
+ </div>
+ <div data-role="content" align="center">
+     <div>
+        <h3>-Mantener las calles limpias</h3>
+     </div>
+  </div>
+     <div data-role="main" class="ui-content">
+  <div data-role="collapsible" data-content-theme="false">
+    <h1>Mostrar Imagen</h1>
+    <div>
+    <p>
+    <br>
+    </div>
+ <div>
+    <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image34','','imagenes/comunidad2.jpg',1)"><img src="imagenes/cuidar_medioambiente.jpg" width="475" height="192" id="Image34"></a></div>
+ </div>
+ </div>
+  <div data-role="content" align="center">
+     <div>
+        <h3>-Que cada vecino saque su basura</h3>
+     </div>
+  </div>
+     <div data-role="main" class="ui-content">
+  <div data-role="collapsible" data-content-theme="false">
+    <h1>Mostrar Imagen</h1>
+    <div>
+    <p>
+    <br>
+    </div>
+ <div>
+    <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image35','','imagenes/comunidad3.jpg',1)"><img src="imagenes/cuidar_medioambiente.jpg" width="476" height="193" id="Image35"></a></div>
+ </div>
+ </div>
+  <div data-role="content" align="center">
+     <div>
+        <h3>-Sacar una convocatoria para poder solucionar este problema</h3>
+     </div>
+  </div>
+     <div data-role="main" class="ui-content">
+  <div data-role="collapsible" data-content-theme="false">
+    <h1>Mostrar Imagen</h1>
+    <div>
+    <p>
+    <br>
+    </div>
+ <div>
+    <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image36','','imagenes/comunidad7.jpg',0)"><img src="imagenes/cuidar_medioambiente.jpg" width="477" height="192" id="Image36"></a></div>
+ </div>
+ </div>
+ 
+ 
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+   <div>
+     <h4>App3</h4>
+   </div>
+     <div>
+        <img src="imagenes/leaves-icon.png" width="46" height="46">
+     </div>
+   <div>
+     <h4>Vanessa Fuentes Campos</h4>
+   </div>
+  </div>
+</div>
+
+<div data-role="page" id="Pagina6" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+     <h1>CIUDADES MAS CONTAMINADAS</h1>
+   </div>
+   <div>
+   <h2>Perkin</h2>
+   <p>China es uno de los países más contaminados del mundo y que más rápidamente está agotando sus recursos. Científicos asiáticos han afirmado que para el año 2030 no quedará agua aprovechable en      China. Más de 750.000 personas mueren al año en China prematuramente por culpa de la contaminación. Ciudades como Shanghai o Pekín tiene gran parte de culpa de esta contaminación. Los nivele de      esmog en Pekín alcanza los 600 microgramos por cada metro cúbico de aire.
+   </div>
+   <div data-role="main" class="ui-content">
+  <div data-role="collapsible" data-content-theme="false">
+    <h1>Mostrar Imagenes:</h1>
+    <div>
+    <p>
+    <br>
+    </div>
+ <div>
+    <img src="imagenes/contaminación-pekin1.jpg" width="48%" height="27%">
+    <img src="imagenes/contaminación-pekin2.jpg" width="51%" height="27%">
+    </div>
+ </div>
+ </div>
+ 
+ <div>
+ <h2>Nueva Delhi</h2>
+   <p>En dura pugna con Pekín por ser la ciudad más contaminada del mundo se encuentra Nueva Delhi, en la India. Según últimos estudios, el aire de Nueva Delhi sería el que más PM2.5 (partículas      tóxicas muy nocivas) tendría de todo el planeta, casi tres veces más que Pekín y unas 15 veces más del máximo recomendado por la OMS. Se calcula que casi u quinto de las muertes que se      producen en la India tienen que ver con la contaminación.
+   </div>
+ <div data-role="main" class="ui-content">
+  <div data-role="collapsible" data-content-theme="false">
+    <h1>Mostrar Imagenes:</h1>
+    <div>
+    <p>
+    <br>
+    </div>
+ <div>
+    <img src="imagenes/Nueva Delhi.jpg" width="50%" height="26%">
+    <img src="imagenes/Nueva Delhi2.jpg" width="48%" height="26%">
+    </div>
+ </div>
+ </div>
+ 
+ <div>
+ <h2>Stuttgart</h2>
+   <p>Es una de las ciudades de Europa donde más gases contaminantes se emiten a la atmósfera por habitante, debido a su potente industria. Se espera que para 2013 sea la ciudad más contaminante de       Europa junto con Moscú o Rotterdam.
+   </div>
+ <div data-role="main" class="ui-content">
+  <div data-role="collapsible" data-content-theme="false">
+    <h1>Mostrar Imagenes: </h1>
+    <div>
+    <p>
+    <br>
+    </div>
+ <div>
+    <img src="imagenes/Stuttgart.jpg" width="50%" height="27%">
+    <img src="imagenes/Stuttgart2.jpg" width="49%" height="27%">
+    </div>
+ </div>
+ </div>
+ 
+  <div>
+ <h2>Ranipet</h2>
+   <p>Si hiciéramos una lista con las 20 ciudades más contaminadas del planeta, casi la mitad serán de la India, y la otra mitad de China. Ranipet es una localidad india donde la esperanza de vida apenas llega a los 40 años de edad por culpa de las consecuencias de albergar plantas químicas durante décadas.
+   </div>
+ <div data-role="main" class="ui-content">
+  <div data-role="collapsible" data-content-theme="false">
+    <h1>Mostrar Imagenes: </h1>
+    <div>
+    <p>
+    <br>
+    </div>
+ <div>
+    <img src="imagenes/Ranipet.jpg" width="50%" height="27%">
+    <img src="imagenes/Ranipet2.jpg" width="48%" height="27%">
+    </div>
+ </div>
+ </div>
+ 
+   <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+   <div>
+     <h4>App3</h4>
+   </div>
+     <div>
+        <img src="imagenes/leaves-icon.png" width="46" height="46">
+     </div>
+   <div>
+     <h4>Vanessa Fuentes Campos</h4>
+   </div>
+  </div>
+</div>
+
+
+</body>
+</html>
